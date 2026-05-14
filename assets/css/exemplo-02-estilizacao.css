@@ -1,0 +1,55 @@
+#caixa-01{
+    display: none;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+.caixa-vermelha{
+background-color: red;
+color: white;
+}
+
+.caixa-azul{
+    background-color: blue;
+    color: white;
+}
+
+.caixa-laranja{
+    background-color: orange;
+    color: black;
+}
+
+
+
+.caixa-amarela{
+    background-color: yellow;
+    color: black;
+}
+
+
+.caixa-verde{
+    background-color: green;
+    color: black;
+}
+
+
+.caixa-anil{
+    background-color: indigo;
+    color: white;
+}
+
+
+.caixa-violeta{
+    background-color: violet;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.imagem{
+    height: 100px;
+}
