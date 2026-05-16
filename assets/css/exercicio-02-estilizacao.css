@@ -1,0 +1,60 @@
+.caixa-01 {
+    border: 5px solid;
+    border-color: black;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+
+}
+
+.aumentar-caixa {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.caixa-normal {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+
+}
+
+.caixa-azul {
+    background-color: blue;
+    color: black;
+    
+}
+
+.caixa-vermelha {
+    background-color: red;
+    color: black;
+}
+
+.caixa-verde {
+    background-color: green;
+    color: black;
+}
+
+.botoes-cores {
+background-color:lightblue
+}
+
+button:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+#card-01{
+height: 100px;
+padding-top: 100px;
+padding-right: 400px;
+
+text-align: center;
+
+}
+
+#imagem1{
+height: 300px;;
+
+}

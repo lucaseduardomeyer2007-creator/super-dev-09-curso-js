@@ -54,16 +54,4 @@ const nota2 = parsefloat(campoNota1.value);
 
 const campoNota3 = document.getElementById(nota3)
 const nota3 = parsefloat(campoNota1.value);
-
-
-
-
-
-
-
-
-
-
-
-
 }

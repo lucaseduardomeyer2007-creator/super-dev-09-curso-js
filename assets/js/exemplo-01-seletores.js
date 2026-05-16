@@ -1,8 +1,6 @@
 function concatenar() {
     //get element by => pegar elemento por id
-    const campoNome = document.getElementById("nome");
-    const campoSobrenome = document.getElementById("sobrenome")
-    const nome = campoNome.value;
+    
     const sobrenome = campoSobrenome.value;
 
     alert(`Nome Completo: ${nome} ${sobrenome}`);
