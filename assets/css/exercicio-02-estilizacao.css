@@ -45,16 +45,16 @@ button:hover {
     transform: translateY(-2px);
 }
 
-#card-01{
-height: 100px;
-padding-top: 100px;
-padding-right: 400px;
 
-text-align: center;
-
-}
-
-#imagem1{
+.imagem1{
 height: 300px;;
-
+width: 300px;
+margin-top: 100px;
+text-align: center;
 }
+
+.apresentar-nomes{
+  padding-right: 100px;  
+    margin-top: 100px;
+}
+
