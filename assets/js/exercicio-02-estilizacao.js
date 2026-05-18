@@ -39,6 +39,13 @@ function caixaCorVerde() {
 function aplicarAlteracao() {
     debugger
     const campoNome1 = document.getElementById("nome-01")
-    const pegarNome = document.getElementById("apresentar-nomes")
+    const pegarNome = document.getElementsByClassName("apresentar-nomes")[0]
     pegarNome.value = campoNome1.value
+}
+
+function temaEscuro() {
+
+    const campoTema2 = document.getElementById("tema2")
+    campoTema2.classList.add("card-01")
+    
 }

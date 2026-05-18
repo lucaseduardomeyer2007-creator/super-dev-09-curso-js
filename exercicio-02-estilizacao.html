@@ -23,17 +23,17 @@
 
     <h1>Perfil de Usuário</h1>
 
-    </div>
+    
 
     <div class="nome-01" id="nome1">
         <label for="nome1">Nome</label>
         <input type="text" id="nome-01">
     </div>
 
-    <select name="tema" id="temas">
+    <select name="tema" class="temas">
         <option selected disabled>Selecione um tema</option>
         <option value="tema1" id="tema1">Tema 1</option>
-        <option value="tema2" id="tema2">Tema 2</option>
+        <option value="tema2" onselect="temaEscuro()" id="tema2">Tema 2</option>
         <option value="tema3" id="tema3">Tema 3</option>
     </select>
 
@@ -44,7 +44,7 @@
 
     <button onclick="aplicarAlteracao()">Aplicar alterações</button>
     <span>
-        <div id="card-01">
+        <div class="card-01">
             <img src="https://img.magnific.com/vetores-premium/icone-de-circulo-de-usuario-anonimo-estilo-simples-de-ilustracao-vetorial-com-sombra-longa_520826-1931.jpg" class="imagem1">
             <textarea disabled readonly class="apresentar-nomes"></textarea>
 
