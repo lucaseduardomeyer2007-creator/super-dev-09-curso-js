@@ -1,0 +1,280 @@
+/*
+========================================
+RESET GERAL
+========================================
+Remove padrões do navegador e padroniza o layout
+Isso evita diferenças entre navegadores
+*/
+
+*{
+    margin: 0; /* remove espaço externo padrão */
+    padding: 0; /* remove espaço interno padrão */
+
+    /* garante que padding não aumente o tamanho do elemento */
+    box-sizing: border-box;
+
+    /* define fonte padrão da aplicação */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+========================================
+BODY (FUNDO DA PÁGINA)
+========================================
+*/
+
+.cardapio-body{
+
+    /* cor de fundo da página */
+    background-color: #f4f4f4;
+
+    /* espaço interno da página */
+    padding: 30px;
+}
+
+/*
+========================================
+CONTAINER PRINCIPAL
+========================================
+Centraliza todo o conteúdo e limita largura
+*/
+
+.cardapio-container{
+
+    /* largura máxima do conteúdo */
+    max-width: 800px;
+
+    /* centraliza horizontalmente */
+    margin: auto;
+}
+
+/*
+========================================
+TÍTULO
+========================================
+*/
+
+.cardapio-title{
+
+    /* centraliza o texto */
+    text-align: center;
+
+    /* espaço abaixo do título */
+    margin-bottom: 20px;
+
+    /* cor do texto */
+    color: #333;
+}
+
+/*
+========================================
+FORMULÁRIO
+========================================
+Área onde o usuário digita os dados
+*/
+
+.cardapio-form{
+
+    /* fundo branco para destacar */
+    background-color: #fff;
+
+    /* espaçamento interno */
+    padding: 20px;
+
+    /* bordas arredondadas */
+    border-radius: 10px;
+
+    /* ativa flexbox */
+    display: flex;
+
+    /* organiza elementos em coluna */
+    flex-direction: column;
+
+    /* espaço entre os elementos internos */
+    gap: 15px;
+
+    /* sombra para dar profundidade */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    /* espaço abaixo do formulário */
+    margin-bottom: 30px;
+}
+
+/*
+========================================
+INPUTS, SELECT E BOTÃO
+========================================
+Estilo base para todos os campos
+*/
+
+.cardapio-form input,
+.cardapio-form select,
+.cardapio-form button{
+
+    /* espaço interno para conforto de digitação */
+    padding: 12px;
+
+    /* bordas arredondadas */
+    border-radius: 8px;
+
+    /* borda cinza padrão */
+    border: 1px solid #ccc;
+
+    /* tamanho da fonte */
+    font-size: 16px;
+}
+
+/*
+========================================
+BOTÃO
+========================================
+*/
+
+.cardapio-form button{
+
+    /* cor de fundo laranja */
+    background-color: #ff6600;
+
+    /* cor do texto branca */
+    color: white;
+
+    /* remove borda padrão */
+    border: none;
+
+    /* muda cursor para mão */
+    cursor: pointer;
+
+    /* animação suave ao mudar cor */
+    transition: 0.3s;
+
+    /* deixa texto em negrito */
+    font-weight: bold;
+}
+
+/*
+========================================
+HOVER DO BOTÃO
+========================================
+Quando o mouse passa por cima
+*/
+
+.cardapio-form button:hover{
+
+    /* escurece o laranja */
+    background-color: #e65c00;
+}
+
+/*
+========================================
+ÁREA DOS CARDS
+========================================
+Onde os produtos aparecem
+*/
+
+.cardapio-grid{
+
+    /* ativa grid layout */
+    display: grid;
+
+    /* cria colunas automáticas responsivas */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    /* espaço entre os cards */
+    gap: 20px;
+}
+
+/*
+========================================
+CARD INDIVIDUAL
+========================================
+Cada item criado pelo JavaScript
+*/
+
+.cardapio-card{
+
+    /* espaço interno */
+    padding: 20px;
+
+    /* bordas arredondadas */
+    border-radius: 10px;
+
+    /* texto branco */
+    color: white;
+
+    /* sombra para destaque */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/*
+Título dentro do card
+*/
+
+.cardapio-card h2{
+
+    /* espaço abaixo do título */
+    margin-bottom: 10px;
+}
+
+/*
+========================================
+PREÇO
+========================================
+*/
+
+.cardapio-preco{
+
+    /* tamanho maior para destaque */
+    font-size: 22px;
+
+    /* negrito */
+    font-weight: bold;
+
+    /* espaçamento vertical */
+    margin: 10px 0;
+}
+
+/*
+========================================
+CATEGORIA (TAG)
+========================================
+*/
+
+.cardapio-categoria{
+
+    /* transforma em bloco inline */
+    display: inline-block;
+
+    /* espaço interno */
+    padding: 5px 10px;
+
+    /* bordas arredondadas estilo "pílula" */
+    border-radius: 20px;
+
+    /* fundo translúcido branco */
+    background-color: rgba(255,255,255,0.2);
+
+    /* tamanho da fonte menor */
+    font-size: 14px;
+}
+
+/*
+========================================
+CORES DAS CATEGORIAS
+========================================
+Cada categoria muda a cor do card inteiro
+*/
+
+/* LANCHE */
+.cardapio-lanche{
+    background-color: #ff9800;
+}
+
+/* BEBIDA */
+.cardapio-bebida{
+    background-color: #2196f3;
+}
+
+/* SOBREMESA */
+.cardapio-sobremesa{
+    background-color: #e91e63;
+}

@@ -17,7 +17,6 @@ function exercicio02ClassificarIdade() {
 
     const campoIdade = document.getElementById("idade")
     const idade = parseInt(campoIdade.value);
-    debugger
     let faixaEtaria = "";
 
 
@@ -41,17 +40,27 @@ function exercicio02ClassificarIdade() {
 }
 
 
-function exercicio03CalcularMediaEscolar() {
+function exercicio3CalcularMediaEscolar() {
+    // Pega os valores dos campos
+    const nota1 = parseFloat(document.getElementById("nota1").value);
+    const nota2 = parseFloat(document.getElementById("nota2").value);
+    const nota3 = parseFloat(document.getElementById("nota3").value);
 
+    // Calcula a média
+    const media = (nota1 + nota2 + nota3) / 3;
 
-const campoNota1 = document.getElementById(nota1)
-const nota1 = parsefloat(campoNota1.value);
+    // Determina a situação do aluno
+    let situacao = "";
+    if (media >= 6) {
+        situacao = "Aprovado";
+    } else if (media >= 4) {
+        situacao = "Recuperação";
+    } else {
+        situacao = "Reprovado";
+    }
 
-
-const campoNota2 = document.getElementById(nota2)
-const nota2 = parsefloat(campoNota1.value);
-
-
-const campoNota3 = document.getElementById(nota3)
-const nota3 = parsefloat(campoNota1.value);
+    // Mostra o resultado no textarea
+    document.getElementById("resultado").value = 
+        `Média: ${media.toFixed(2)} - Situação: ${situacao}`;
 }
+

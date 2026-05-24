@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cardápio Digital</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/exercicio-03-criar-elementos.css">
 </head>
-<body>
-    
+
+<!-- body agora tem classe específica -->
+<body class="cardapio-body">
+
+    <div class="cardapio-container">
+
+        <!-- TÍTULO -->
+        <h1 class="cardapio-title">🍔 Cardápio Digital</h1>
+
+        <!-- FORMULÁRIO -->
+        <div class="cardapio-form">
+
+            <input 
+                type="text"
+                id="nome"
+                placeholder="Digite o nome do prato"
+            >
+
+            <input 
+                type="number"
+                id="preco"
+                placeholder="Digite o preço"
+            >
+
+            <select id="categoria">
+                <option value="">Selecione a categoria</option>
+                <option value="lanche">Lanche</option>
+                <option value="bebida">Bebida</option>
+                <option value="sobremesa">Sobremesa</option>
+            </select>
+
+            <button id="btnAdicionar">
+                Adicionar ao Cardápio
+            </button>
+
+        </div>
+
+        <!-- ÁREA DOS CARDS -->
+        <div class="cardapio-grid" id="cardapio"></div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="assets/js/exercicio-03-criar-elementos.js"></script>
+
 </body>
 </html>
